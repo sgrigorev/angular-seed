@@ -1,0 +1,26 @@
+<style>
+  table {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+  th,
+  td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid black;
+  }
+</style>
+
+<table>
+  <thead>
+    <th>Name</th>
+    <th>Books number</th>
+  </thead>
+  <tbody ng-repeat="user in users">
+    <tr>
+      <td><a href="/users/{{user.id}}">{{user.firstName + ' ' + user.secondName}}</a></td>
+      <td>{{user.books.length}}</td>
+    </tr>
+  </tbody>
+</table>

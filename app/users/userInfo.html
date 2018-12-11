@@ -1,0 +1,8 @@
+<b>User:</b> {{user.firstName + ' ' + user.lastName}}
+</br>
+<b>Age:</b>{{user.age}}
+</br>
+<b>Books:</b>
+<ul ng-repeat="book in user.books">
+  <li>{{book.name}}</li>
+</ul>
